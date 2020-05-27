@@ -4,3 +4,10 @@
   height: 100%;
   background-color: $primary-color;
 }
+
+.profilePicture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: $border;
+}
