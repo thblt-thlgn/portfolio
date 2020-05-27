@@ -16,12 +16,11 @@
   --font-size-large: 36px;
 
   // COLORS
-  --primary-color: 79, 98, 114, 1;
-  --secondary-color: 79, 98, 114, 1;
+  --primary-color: 14, 71, 73, 1;
+  --secondary-color: 239, 231, 218, 1;
   --font-color: var(--charcoal);
-  --surface-color: 255, 255, 255, 1;
-  --alternative-surface-color: 245, 245, 245, 1;
-  --charcoal: 51, 51, 51, 1;
+  --surface-color: var(--secondary-color);
+  --charcoal: 25, 25, 25, 1;
 }
 
 // ============================================================================================
@@ -58,7 +57,6 @@ $primary-color: RGBA(var(--primary-color));
 $secondary-color: RGBA(var(--secondary-color));
 $font-color: RGBA(var(--font-color));
 $surface-color: RGBA(var(--surface-color));
-$alternative-surface-color: RGBA(var(--alternative-surface-color));
 $charcoal: RGBA(var(--charcoal));
 
 // BREAKPOINTS

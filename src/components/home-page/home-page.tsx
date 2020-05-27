@@ -1,9 +1,14 @@
 import React, { FunctionComponent } from 'react';
-import { useTranslation } from 'react-i18next';
+import Sidebar from 'components/sidebar';
+import styles from './home-page.module.scss';
 
 const HomePage: FunctionComponent = () => {
-  const { t } = useTranslation('home');
-  return <h1>{t('title')}</h1>;
+  return (
+    <div className={styles.root}>
+      <Sidebar className={styles.sidebar} />
+      <div className={styles.page}></div>
+    </div>
+  );
 };
 
 export default HomePage;
