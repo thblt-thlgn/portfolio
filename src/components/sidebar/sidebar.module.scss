@@ -5,6 +5,25 @@
   background-color: $primary-color;
   position: relative;
   padding: $space;
+  color: $surface-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+
+  span {
+    display: block;
+    font-weight: $fw-bold;
+    font-size: $fs-large;
+
+    &:last-child {
+      text-transform: uppercase;
+    }
+  }
 }
 
 .profilePicture {
@@ -12,6 +31,7 @@
   height: 200px;
   border-radius: 50%;
   border: $border;
+  margin-right: $big-space;
 }
 
 .footer {

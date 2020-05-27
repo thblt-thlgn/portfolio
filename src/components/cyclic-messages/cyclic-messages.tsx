@@ -4,12 +4,14 @@ import styles from './cyclic-messages.module.scss';
 
 interface Props {
   className?: string;
+  prefix?: string;
   messages: string[];
+  suffix?: string;
   interval?: number; // in ms
 }
 
 const CyclicMessages: FunctionComponent<Props> = (props) => {
-  const { className, messages, interval = 2000 } = props;
+  const { className, messages, interval = 2000, prefix, suffix } = props;
   const [index, setIndex] = useState(1);
   useEffect(() => {
     const timeout = setInterval(() => {
@@ -21,7 +23,8 @@ const CyclicMessages: FunctionComponent<Props> = (props) => {
     return (): void => clearInterval(timeout);
   }, [messages.length, interval]);
 
-  return <div className={clsx(styles.root, className)}>{messages[index]}</div>;
+  const message = [prefix, messages[index], suffix].filter((cursor) => !!cursor).join(' ');
+  return <div className={clsx(styles.root, className)}>{message}</div>;
 };
 
 export default CyclicMessages;

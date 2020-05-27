@@ -12,11 +12,24 @@ interface Props {
 const Sidebar: FunctionComponent<Props> = (props) => {
   return (
     <section className={clsx(styles.root, props.className)}>
-      <Image
-        className={styles.profilePicture}
-        uri='https://pngimage.net/wp-content/uploads/2018/06/photo-profil-png-1.png'
-      />
-      <CyclicMessages messages={['premier message', 'second message']}></CyclicMessages>
+      <div className={clsx(styles.profile)}>
+        <Image
+          className={styles.profilePicture}
+          uri='https://pngimage.net/wp-content/uploads/2018/06/photo-profil-png-1.png'
+        />
+        <div>
+          <span>Thibault</span>
+          <span>Théologien</span>
+        </div>
+      </div>
+
+      <div>
+        <CyclicMessages
+          prefix="Vous êtes à la recherche d'un"
+          messages={['dévelopeur web', 'guitariste', 'ingénieur', 'barroudeur']}
+          suffix='?'
+        />
+      </div>
 
       <div>
         <RedirectionButton name='github' uri='https://github.com/thblt-thlgn' />
