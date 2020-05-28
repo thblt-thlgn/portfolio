@@ -5,7 +5,13 @@ const SidebarFooter: FunctionComponent = () => (
   <div className={styles.root}>
     <span>©2020, Thibault Théologien</span>
     <br />
-    <a>Get source code</a>
+    <a
+      href='https://github.com/thblt-thlgn/portfolio'
+      target='_blank'
+      rel='noopener noreferrer'
+    >
+      Get source code
+    </a>
   </div>
 );
 

@@ -8,4 +8,10 @@
   position: absolute;
   bottom: $small-space;
   left: $small-space;
+
+  a {
+    color: $surface-color;
+    text-decoration: none;
+    font-style: oblique;
+  }
 }

@@ -13,7 +13,8 @@
   --font-size-small: 14px;
   --font-size-regular: 16px;
   --font-size-medium: 24px;
-  --font-size-large: 36px;
+  --font-size-large: 28px;
+  --font-size-very-large: 36px;
 
   // COLORS
   --primary-color: 14, 71, 73, 1;
@@ -44,6 +45,7 @@ $fs-small: var(--font-size-small);
 $fs-regular: var(--font-size-regular);
 $fs-medium: var(--font-size-medium);
 $fs-large: var(--font-size-large);
+$fs-very-large: var(--font-size-very-large);
 
 // FONT-WEIGHT
 $fw-light: 300;

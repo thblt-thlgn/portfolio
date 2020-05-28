@@ -11,7 +11,9 @@ interface Props {
 const ProjectCard: FunctionComponent<Props> = (props) => (
   <div className={styles.root}>
     <div className={styles.header}>
-      <a href={props.uri}>{props.name}</a>
+      <a href={props.uri} target='_blank' rel='noopener noreferrer'>
+        {props.name}
+      </a>
     </div>
     <div>{props.description}</div>
   </div>

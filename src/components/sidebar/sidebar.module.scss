@@ -14,11 +14,12 @@
 .profile {
   display: flex;
   align-items: center;
+  margin: $big-space 0;
 
   span {
     display: block;
     font-weight: $fw-bold;
-    font-size: $fs-large;
+    font-size: $fs-very-large;
 
     &:last-child {
       text-transform: uppercase;
@@ -32,4 +33,15 @@
   border-radius: 50%;
   border: $border;
   margin-right: $big-space;
+}
+
+.cyclicMessage {
+  font-size: $fs-large;
+  text-align: center;
+  margin: $big-space $space;
+}
+
+.socialContainer {
+  position: relative;
+  z-index: 10;
 }
