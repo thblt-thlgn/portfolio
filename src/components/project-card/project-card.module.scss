@@ -1,0 +1,16 @@
+@import 'variables';
+
+.root {
+  margin: $space;
+  padding: $space;
+  border: $border;
+  border-radius: $border-radius;
+}
+
+.header {
+  margin-bottom: $space;
+
+  a {
+    font-weight: $fw-semi-bold;
+  }
+}

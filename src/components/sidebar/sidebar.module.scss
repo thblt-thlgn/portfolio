@@ -33,13 +33,3 @@
   border: $border;
   margin-right: $big-space;
 }
-
-.footer {
-  position: absolute;
-  width: 100vh;
-  height: 100%;
-  transform: rotate(-90deg);
-  position: absolute;
-  bottom: $small-space;
-  left: $small-space;
-}

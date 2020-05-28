@@ -4,6 +4,7 @@ import CyclicMessages from 'components/cyclic-messages';
 import Image from 'components/image';
 import styles from './sidebar.module.scss';
 import RedirectionButton from 'components/redirection-button';
+import SidebarFooter from 'components/sidebar-footer';
 
 interface Props {
   className?: string;
@@ -36,11 +37,7 @@ const Sidebar: FunctionComponent<Props> = (props) => {
         <RedirectionButton name='linkedin' uri='https://www.linkedin.com/in/thibault-theologien' />
       </div>
 
-      <div className={styles.footer}>
-        <span>©2020, Thibault Théologien</span>
-        <br />
-        <a>Get source code</a>
-      </div>
+      <SidebarFooter />
     </section>
   );
 };
