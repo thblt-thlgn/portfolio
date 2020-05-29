@@ -1,0 +1,85 @@
+@import 'variables';
+
+.root svg {
+  height: 100%;
+  width: 100%;
+}
+
+// -----------------------------------
+// DIMENSIONS
+// -----------------------------------
+.small {
+  height: $fs-small;
+  width: $fs-small;
+}
+
+.regular {
+  height: $fs-regular;
+  width: $fs-regular;
+}
+
+.medium {
+  height: $fs-medium;
+  width: $fs-medium;
+}
+
+.large {
+  height: $fs-large;
+  width: $fs-large;
+}
+
+.very-large {
+  height: $fs-very-large;
+  width: $fs-very-large;
+}
+
+// -----------------------------------
+// COLORS
+// -----------------------------------
+.color-primary path {
+  stroke: $primary-color;
+  fill: $primary-color;
+}
+
+.color-secondary path {
+  stroke: $secondary-color;
+  fill: $secondary-color;
+}
+
+.color-surface path {
+  stroke: $surface-color;
+  fill: $surface-color;
+}
+
+.color-transparent path {
+  stroke: transparent;
+  fill: transparent;
+}
+
+.color-charcoal path {
+  stroke: $charcoal;
+  fill: $charcoal;
+}
+
+// -----------------------------------
+// BACKGROUND COLORS
+// -----------------------------------
+.background-primary {
+  background-color: $primary-color;
+}
+
+.background-secondary {
+  background-color: $primary-color;
+}
+
+.background-surface {
+  background-color: $surface-color;
+}
+
+.background-charcoal {
+  background-color: charcoal;
+}
+
+.background-transparent {
+  background-color: transparent;
+}

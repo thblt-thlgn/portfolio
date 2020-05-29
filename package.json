@@ -31,6 +31,8 @@
     "stylelint-config-sass-guidelines": "^7.0.0"
   },
   "scripts": {
+    "prestart": "yarn gen:icons",
+    "gen:icons": "node scripts/generate-icon-components",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

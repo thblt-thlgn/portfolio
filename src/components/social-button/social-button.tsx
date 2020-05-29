@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
-import { LinkedInIcon, GitHubIcon, Props as IconProps } from 'components/icons';
 import styles from './social-button.module.scss';
+import SVGIcon, { Props as SVGIconProps } from 'components/svg-icon';
 
 interface Props {
   type: 'linkedIn' | 'github';
@@ -8,16 +8,16 @@ interface Props {
 }
 
 const getIcon = (type: Props['type']): JSX.Element => {
-  const props: IconProps = {
-    size: 'large',
-    primaryColor: 'secondary',
+  const props: Partial<SVGIconProps> = {
+    size: 'very-large',
+    color: 'secondary',
   };
 
   switch (type) {
     case 'linkedIn':
-      return <LinkedInIcon {...props} />;
+      return <SVGIcon name='linkedin-logo' {...props} />;
     case 'github':
-      return <GitHubIcon {...props} />;
+      return <SVGIcon name='github-logo' {...props} />;
     default:
       throw new Error('Invalid type');
   }
