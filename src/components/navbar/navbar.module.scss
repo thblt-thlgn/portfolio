@@ -1,10 +1,11 @@
 @import 'variables';
 
 .root {
-  margin: $big-space;
+  margin: $big-space $big-space $space $big-space;
 
   ul {
     display: flex;
+    justify-content: flex-end;
     list-style: none;
     padding: 0;
     margin: 0;

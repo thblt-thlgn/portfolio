@@ -46,9 +46,10 @@ const Sidebar: FunctionComponent<Props> = (props) => {
       </div>
 
       <div className={styles.socialContainer}>
-        <SocialButton type='github' uri='https://github.com/thblt-thlgn' />
+        <SocialButton icon='email-communication' uri='' />
+        <SocialButton icon='github-logo' uri='https://github.com/thblt-thlgn' />
         <SocialButton
-          type='linkedIn'
+          icon='linkedin-logo'
           uri='https://www.linkedin.com/in/thibault-theologien'
         />
       </div>

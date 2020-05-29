@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import styles from './svg-icon.module.scss';
 
 type Color = 'primary' | 'secondary' | 'transparent' | 'charcoal';
-type Size = 'small' | 'regular' | 'medium' | 'large' | 'very-large';
+type Size = 'small' | 'medium' | 'large';
 
 export interface Props {
   name: IconName;

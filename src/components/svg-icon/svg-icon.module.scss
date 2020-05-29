@@ -9,28 +9,18 @@
 // DIMENSIONS
 // -----------------------------------
 .small {
-  height: $fs-small;
-  width: $fs-small;
-}
-
-.regular {
-  height: $fs-regular;
-  width: $fs-regular;
+  height: $icon-small;
+  width: $icon-small;
 }
 
 .medium {
-  height: $fs-medium;
-  width: $fs-medium;
+  height: $icon-medium;
+  width: $icon-medium;
 }
 
 .large {
-  height: $fs-large;
-  width: $fs-large;
-}
-
-.very-large {
-  height: $fs-very-large;
-  width: $fs-very-large;
+  height: $icon-large;
+  width: $icon-large;
 }
 
 // -----------------------------------
