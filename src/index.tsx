@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HomePage from './components/home-page';
+import App from './components/app';
 import * as serviceWorker from './config/service-worker';
 import './config/i18n';
 import './assets/styles/global.scss';
@@ -8,7 +8,7 @@ import './assets/styles/global.scss';
 ReactDOM.render(
   <React.StrictMode>
     <React.Suspense fallback='loading...'>
-      <HomePage />
+      <App />
     </React.Suspense>
   </React.StrictMode>,
   document.getElementById('root'),
