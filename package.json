@@ -1,7 +1,10 @@
 {
   "name": "portfolio",
+  "description": "React web-app about myself (to cure my egocentricity)",
   "version": "0.0.1",
+  "author": "Thibault Théologien <thibault.theologien@hotmail.fr>",
   "private": false,
+  "license": "UNLICENSED",
   "dependencies": {
     "clsx": "^1.1.0",
     "i18next": "^19.4.5",
@@ -49,5 +52,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thblt-thlgn/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thblt-thlgn/portfolio/issues"
+  },
+  "homepage": "https://github.com/thblt-thlgn/portfolio#readme",
+  "keywords": [
+    "nodejs",
+    "typescript"
+  ]
 }

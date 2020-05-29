@@ -5,7 +5,6 @@ import Image from 'components/image';
 import styles from './sidebar.module.scss';
 import SidebarFooter from 'components/sidebar-footer';
 import SocialButton from 'components/social-button';
-import SVGIcon from 'components/svg-icon';
 
 interface Props {
   className?: string;
