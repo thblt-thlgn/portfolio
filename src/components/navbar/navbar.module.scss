@@ -1,8 +1,30 @@
 @import 'variables';
 
-.root > ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.root {
+  margin: $big-space;
+
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding-bottom: $small-space;
+    }
+
+    li + li {
+      margin-left: $big-space;
+    }
+
+    a {
+      text-decoration: none;
+      color: $charcoal;
+      font-size: $fs-regular;
+    }
+  }
+
+  .active {
+    border-bottom: $border;
+  }
 }
