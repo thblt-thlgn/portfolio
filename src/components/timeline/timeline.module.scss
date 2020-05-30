@@ -1,0 +1,35 @@
+@import 'variables';
+
+.root {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid $charcoal;
+}
+
+.timeEvent {
+  text-align: right;
+
+  .title {
+    margin-right: $space;
+  }
+
+  .description {
+    margin-right: $space;
+  }
+
+  .date {
+    display: flex;
+    margin: $space 0;
+
+    span {
+      flex: 1;
+    }
+
+    hr {
+      border: 0.5px dashed $charcoal;
+      outline: none;
+      margin-left: $space;
+      width: 40px;
+    }
+  }
+}
